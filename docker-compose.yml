@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myproject-docker:latest
+    container_name: myproject-container
+    command: python3 app.py
