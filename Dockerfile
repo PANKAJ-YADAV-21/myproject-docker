@@ -2,4 +2,4 @@
 FROM gcr.io/distroless/python3
 WORKDIR /app
 COPY app.py .
-CMD ["python3", "app.py"]
+CMD ["/app/app.py"]
